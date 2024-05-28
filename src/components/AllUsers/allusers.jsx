@@ -44,7 +44,7 @@ const AllUsers = () => {
   useEffect(() => {
     async function getUsers() {
       try {
-        let res = await axios.get("http://localhost:8000/api/getUser");
+        let res = await axios.get("https://123abcd-abidi_pro.mdbgo.io/api/getUser");
         setUsers(res.data);
         console.log(res.data);
       } catch (e) {
@@ -58,7 +58,7 @@ const AllUsers = () => {
     e.preventDefault();
     try {
       // Make API call to update user data
-      await axios.put(`http://localhost:8000/api/updateUser`, {
+      await axios.put(`https://123abcd-abidi_pro.mdbgo.io/api/updateUser`, {
         _id:selectedUser,
         name: e.target.name.value,
         designation: e.target.designation.value,
@@ -85,7 +85,7 @@ const AllUsers = () => {
     if(selectedUser==null){
       alert("Please select/tick a user first!");
     }else{
-      let newone = await axios.delete("http://localhost:8000/api/deleteUser",{params: {id: selectedUser}});
+      let newone = await axios.delete("https://123abcd-abidi_pro.mdbgo.io/api/deleteUser",{params: {id: selectedUser}});
       console.log("Delete user:", newone);
       window.location.reload();
     }

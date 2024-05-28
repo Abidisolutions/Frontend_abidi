@@ -17,7 +17,7 @@ const Profile = () => {
     return (
       <Dropdown>
         <div className='dropdown'>
-          <MenuButton><img src={`http://localhost:8000/${localStorage.getItem('email')}.png`} alt="" /></MenuButton>
+          <MenuButton><img src={`https://123abcd-abidi_pro.mdbgo.io/${localStorage.getItem('email')}.png`} alt="" /></MenuButton>
           <Menu>
             <MenuItem>Profile</MenuItem>
             <MenuItem><Link to="/myAccount" style={{textDecoration:"None",color:"black"}}>My account</Link> </MenuItem>

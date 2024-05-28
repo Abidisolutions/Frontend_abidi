@@ -35,7 +35,7 @@ import axios from 'axios';
   
     async function getUserId(userId){
       try{
-        let res = await axios.get(`http://localhost:8000/api/users/user/${userId}`,{
+        let res = await axios.get(`https://123abcd-abidi_pro.mdbgo.io/api/users/user/${userId}`,{
           params:{
             userId:userId
           }

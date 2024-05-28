@@ -31,7 +31,7 @@ const HomePage = ({ children }) => {
  
   async function getUserId(userId) {
     try {
-      let res = await axios.get(`http://localhost:8000/api/users/user/${userId}`, {
+      let res = await axios.get(`https://123abcd-abidi_pro.mdbgo.io/api/users/user/${userId}`, {
         params: {
           userId: userId
         }
@@ -44,7 +44,7 @@ const HomePage = ({ children }) => {
 
   const getEntries = async () => {
     try{
-      let res = await axios.get('http://localhost:8000/api/timeEntries',{
+      let res = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/timeEntries',{
         params:{
           email:localStorage.getItem('email')
         }
@@ -59,7 +59,7 @@ const HomePage = ({ children }) => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/my-tasks',{params:{
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/my-tasks',{params:{
         name: localStorage.getItem("name"),
       }});
       console.log(response.data);
@@ -88,7 +88,7 @@ const HomePage = ({ children }) => {
  
         
           <div className="profileimg">
-              <img src={`http://localhost:8000/${localStorage.getItem('email')}.png`} alt="" />
+              <img src={`https://123abcd-abidi_pro.mdbgo.io/${localStorage.getItem('email')}.png`} alt="" />
               <h2 className='headHome'>Welcome {userName} !</h2>
  
  
