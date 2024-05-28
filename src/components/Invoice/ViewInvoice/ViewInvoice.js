@@ -22,7 +22,7 @@ const View = () => {
 
   const fetchInvoices = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/view-invoices');
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/view-invoices');
       setInvoices(response.data);
     } catch (error) {
       console.error("Error fetching invoices:", error);

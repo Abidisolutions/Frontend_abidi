@@ -50,7 +50,7 @@ const Account = () => {
         formData.append('email',localStorage.getItem("email"));
         formData.append('file',files[0]);
         setimageProfile(files[0]);
-        const response = await fetch('http://localhost:8000/api/profile', {
+        const response = await fetch('https://123abcd-abidi_pro.mdbgo.io/api/profile', {
           method: 'POST',
           body: formData,
         });
@@ -72,7 +72,7 @@ const Account = () => {
 
   useEffect(() => {
     const userId = localStorage.getItem("userId");
-    axios.get(`http://localhost:8000/api/users/user/${userId}`)
+    axios.get(`https://123abcd-abidi_pro.mdbgo.io/api/users/user/${userId}`)
       .then(response => {
         console.log(response.data);
         const userData = response.data;
@@ -102,7 +102,7 @@ const Account = () => {
     const userId = localStorage.getItem("userId");
 
     try {
-      await axios.put("http://localhost:8000/api/users/updateAccount", { userId, ...formData });
+      await axios.put("https://123abcd-abidi_pro.mdbgo.io/api/users/updateAccount", { userId, ...formData });
       alert("Account updated successfully");
       window.location.reload();
     } catch (error) {
@@ -259,7 +259,7 @@ const Account = () => {
             </div>
             <div className="profile-right" style={{display:"flex",flexDirection:"column",alignItems:"center"}}>
               <div className="profileimg">
-              <img src={`http://localhost:8000/${localStorage.getItem('email')}.png`} alt="" />
+              <img src={`https://123abcd-abidi_pro.mdbgo.io/${localStorage.getItem('email')}.png`} alt="" />
               <h2>{personalData.name}</h2>
 
 
@@ -280,7 +280,7 @@ const Account = () => {
               <p><strong>Report To:</strong> {personalData.reportTo}</p>
 
               </div>
-              <iframe src={`http://localhost:8000/${localStorage.getItem('email')}.pdf`} style={{maxHeight:600,margin:20, maxWidth:96+"%"}} />
+              <iframe src={`https://123abcd-abidi_pro.mdbgo.io/${localStorage.getItem('email')}.pdf`} style={{maxHeight:600,margin:20, maxWidth:96+"%"}} />
             </div>
           </div>
         </div>

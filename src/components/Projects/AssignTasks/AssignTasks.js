@@ -23,7 +23,7 @@ const AssignTasks = () => {
   const getCreatedProjects = async ()=>{
     let currentUser = localStorage.getItem("name");
     try {
-      const response = await axios.get('http://localhost:8000/api/project/created',{
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/project/created',{
         params:{
           name:currentUser,
         }
@@ -107,7 +107,7 @@ const AssignTasks = () => {
           setProjects(updatedProjects);
           toast.success('Task updated successfully');
       } else {
-          const response = await axios.post('http://localhost:8000/api/assign-tasks', formData);
+          const response = await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/assign-tasks', formData);
           setProjects([...projects, { ...formData, _id: response.data.project._id }]);
           toast.success('Task added successfully');
       }

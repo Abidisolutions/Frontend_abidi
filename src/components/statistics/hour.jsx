@@ -43,7 +43,7 @@ const HourBar = () => {
     const fetchTimeEntries = async () => {
       const email = localStorage.getItem('email');
       try {
-        const response = await axios.get(`http://localhost:8000/api/timeEntries?email=${email}`);
+        const response = await axios.get(`https://123abcd-abidi_pro.mdbgo.io/api/timeEntries?email=${email}`);
         const entries = response.data;
 
         // Map days to indexes

@@ -13,7 +13,7 @@ const ProjectStats = () => {
   useEffect(()=>{
     async function getCompletedTasks(){
       try{
-        const res = await axios.get("http://localhost:8000/api/tasks/completed",{params:{
+        const res = await axios.get("https://123abcd-abidi_pro.mdbgo.io/api/tasks/completed",{params:{
         name: localStorage.getItem("name")
       }});
       console.log(res.data);
@@ -25,7 +25,7 @@ const ProjectStats = () => {
     }
     async function getReviewTasks(){
       try{
-        const res = await axios.get("http://localhost:8000/api/tasks/review",{params:{
+        const res = await axios.get("https://123abcd-abidi_pro.mdbgo.io/api/tasks/review",{params:{
           name: localStorage.getItem("name")
         }});
         console.log(res.data);
@@ -38,7 +38,7 @@ const ProjectStats = () => {
     }
     async function getProgressTasks(){
       try{
-        const res = await axios.get("http://localhost:8000/api/tasks/in-progress",{params:{
+        const res = await axios.get("https://123abcd-abidi_pro.mdbgo.io/api/tasks/in-progress",{params:{
         name: localStorage.getItem("name")
       }});
       console.log(res.data);

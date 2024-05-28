@@ -23,7 +23,7 @@ const TaskStatus = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/create-tasks', {
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/create-tasks', {
         params: {
           name: localStorage.getItem("name"),
         }
@@ -72,10 +72,10 @@ const TaskStatus = () => {
 
     try {
       if (editingProject) {
-        await axios.put(`http://localhost:8000/api/assigned-tasks/${editingProject._id}`, formData);
+        await axios.put(`https://123abcd-abidi_pro.mdbgo.io/api/assigned-tasks/${editingProject._id}`, formData);
         toast.success("Task updated successfully");
       } else {
-        await axios.post('http://localhost:8000/api/assigned-tasks', formData);
+        await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/assigned-tasks', formData);
         toast.success("Task created successfully");
       }
       fetchTasks();

@@ -12,7 +12,7 @@ const Taskchart = () => {
   useEffect(() => {
     const fetchTaskStatuses = async () => {
       const name = localStorage.getItem('name'); // Assuming 'name' is stored in localStorage
-      const response = await axios.get(`http://localhost:8000/api/task-statuses?name=${name}`);
+      const response = await axios.get(`https://123abcd-abidi_pro.mdbgo.io/api/task-statuses?name=${name}`);
       const statuses = response.data;
  
       const statusCounts = [0, 0, 0]; // [completed, ongoing, on review]

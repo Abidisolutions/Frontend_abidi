@@ -63,7 +63,7 @@ const ClockIn_out = () => {
       // setTimeEntries(prevEntries => [...prevEntries, newEntry]);
       setTime(0);
       newEntry.email= localStorage.getItem('email');
-      axios.post("http://localhost:8000/api/timeEntries",newEntry).then((res)=>{console.log(res);window.location.reload();}).catch((err)=>{console.log(err);toast.info(err.response.data.error);});
+      axios.post("https://123abcd-abidi_pro.mdbgo.io/api/timeEntries",newEntry).then((res)=>{console.log(res);window.location.reload();}).catch((err)=>{console.log(err);toast.info(err.response.data.error);});
       // Do not reset checkInTime here, let it persist for the next clock-in
     }
   };
@@ -84,7 +84,7 @@ const ClockIn_out = () => {
 
   const getEntries = async () => {
     try{
-      let res = await axios.get('http://localhost:8000/api/timeEntries',{
+      let res = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/timeEntries',{
         params:{
           email:localStorage.getItem('email')
         }

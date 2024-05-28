@@ -21,7 +21,7 @@ const AddProjectForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/projects', {
+      const response = await fetch('https://123abcd-abidi_pro.mdbgo.io/api/projects', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

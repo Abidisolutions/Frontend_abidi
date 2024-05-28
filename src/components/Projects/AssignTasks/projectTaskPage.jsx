@@ -58,7 +58,7 @@ const ProjectTaskPage = () => {
 
     const getAllUsers = async()=>{
       try{
-        const allUsers = await axios.get("http://localhost:8000/api/users/names");
+        const allUsers = await axios.get("https://123abcd-abidi_pro.mdbgo.io/api/users/names");
         console.log(allUsers.data);
         setUsers(allUsers.data);
       }catch(e){
@@ -175,14 +175,14 @@ const ProjectTaskPage = () => {
     try {
       if (editingIndex !== null) {
         const projectId = projects[editingIndex]._id; // Ensure each project has an _id property
-        await axios.put(`http://localhost:8000/api/assign-tasks/`, formData);
+        await axios.put(`https://123abcd-abidi_pro.mdbgo.io/api/assign-tasks/`, formData);
         const updatedProjects = [...projects];
         updatedProjects[editingIndex] = { ...formData, _id: projectId };
         setProjects(updatedProjects);
         toast.success("Task updated successfully");
       } else {
         const response = await axios.post(
-          "http://localhost:8000/api/assign-tasks",
+          "https://123abcd-abidi_pro.mdbgo.io/api/assign-tasks",
           formData
         );
         setProjects([
@@ -235,9 +235,9 @@ const ProjectTaskPage = () => {
     };
     console.log(formData);
     try{
-      await axios.post("http://localhost:8000/api/create-tasks",formData);
+      await axios.post("https://123abcd-abidi_pro.mdbgo.io/api/create-tasks",formData);
       alert("Task Assigned Successfully");
-      await axios.get('http://localhost:8000/api/task/mail', {
+      await axios.get('https://123abcd-abidi_pro.mdbgo.ioapi/task/mail', {
         params: {
           personalEmail: "maazali1611@gmail.com",
           textDescription: formData.textDescription,

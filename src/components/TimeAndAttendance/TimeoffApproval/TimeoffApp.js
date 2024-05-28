@@ -17,7 +17,7 @@ const TimeoffApp = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get('http://localhost:8000/api/timeoff');
+        const { data } = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/timeoff');
         setProjects(data);
       } catch (error) {
         console.error('Error fetching data: ', error);
@@ -42,12 +42,12 @@ const TimeoffApp = () => {
   const handleApprove = async (index,reason,off_date,end_date,email,name) => {
     setEditingIndex(index);
     try{
-      const res = await axios.post("http://localhost:8000/api/timeoff/approve",{
+      const res = await axios.post("https://123abcd-abidi_pro.mdbgo.io/api/timeoff/approve",{
         id:index
       });
       toast.success(res.data.message);
       window.location.reload();
-      const res_two = await axios.get("http://localhost:8000/api/timeoff/mail",{ params:{
+      const res_two = await axios.get("https://123abcd-abidi_pro.mdbgo.io/api/timeoff/mail",{ params:{
         id:index,
         reason:reason,
         off_date:off_date,
@@ -78,12 +78,12 @@ const TimeoffApp = () => {
 
     try {
       if (editingIndex !== null) {
-        const updatedProject = await axios.put(`http://localhost:8000/api/timeoff/${projects[editingIndex]._id}`, formData);
+        const updatedProject = await axios.put(`https://123abcd-abidi_pro.mdbgo.io/api/timeoff/${projects[editingIndex]._id}`, formData);
         const updatedProjects = [...projects];
         updatedProjects[editingIndex] = updatedProject.data;
         setProjects(updatedProjects);
       } else {
-        const newProject = await axios.post('http://localhost:8000/api/timeoff', formData);
+        const newProject = await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/timeoff', formData);
         setProjects([...projects, newProject.data]);
       }
       setPopupOpen(false);

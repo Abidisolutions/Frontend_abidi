@@ -28,7 +28,7 @@ const CreateUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/users/create-user', {
+      const response = await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/users/create-user', {
         ...formData,
         birthday: formData.birthday ? new Date(formData.birthday).toISOString() : null,
       });
@@ -48,7 +48,7 @@ const CreateUser = () => {
         reportTo: '',
         personalEmail: "", // Reset status
       });
-      await axios.get('http://localhost:8000/api/createUser/mail', {
+      await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/createUser/mail', {
         params: {
           personalEmail: formData.personalEmail,
           email: formData.email,
@@ -63,7 +63,7 @@ const CreateUser = () => {
 
   async function getUserId(userId) {
     try {
-      let res = await axios.get(`http://localhost:8000/api/users/user/${userId}`, {
+      let res = await axios.get(`https://123abcd-abidi_pro.mdbgo.io/api/users/user/${userId}`, {
         params: {
           userId: userId,
         },

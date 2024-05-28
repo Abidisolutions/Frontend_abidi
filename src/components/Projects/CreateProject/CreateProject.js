@@ -110,13 +110,13 @@ const handleMembersChange = (selectedOptions) => {
     try {
         if (editingIndex !== null) {
             const projectId = projects[editingIndex]._id; // Ensure each project has an _id property
-            await axios.put(`http://localhost:8000/api/projects/${projectId}`, formData);
+            await axios.put(`https://123abcd-abidi_pro.mdbgo.io/api/projects/${projectId}`, formData);
             const updatedProjects = [...projects];
             updatedProjects[editingIndex] = { ...formData, _id: projectId };
             setProjects(updatedProjects);
             toast.success('Project updated successfully');
         } else {
-            const response = await axios.post('http://localhost:8000/api/projects', formData);
+            const response = await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/projects', formData);
             setProjects([...projects, { ...formData, _id: response.data.project._id }]);
             toast.success('Project added successfully');
         }
@@ -133,7 +133,7 @@ const handleMembersChange = (selectedOptions) => {
 useEffect(() => {
   const getAllUsers = async()=>{
     try{
-      const allUsers = await axios.get("http://localhost:8000/api/users/names");
+      const allUsers = await axios.get("https://123abcd-abidi_pro.mdbgo.io/api/users/names");
       console.log(allUsers.data);
       setUsers(allUsers.data);
     }catch(e){
@@ -145,7 +145,7 @@ useEffect(() => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/project/created',{params:{
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/project/created',{params:{
         name: localStorage.getItem('name'),
       }});
       console.log(response.data);

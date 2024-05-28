@@ -15,7 +15,7 @@ const TimeoffReq = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data } = await axios.get('http://localhost:8000/api/timeoff');
+        const { data } = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/timeoff');
         setProjects(data);
       } catch (error) {
         console.error('Error fetching data: ', error);
@@ -61,12 +61,12 @@ const TimeoffReq = () => {
 
     try {
       if (editingIndex !== null) {
-        const updatedProject = await axios.put(`http://localhost:8000/api/timeoff/${projects[editingIndex]._id}`, formData);
+        const updatedProject = await axios.put(`https://123abcd-abidi_pro.mdbgo.io/api/timeoff/${projects[editingIndex]._id}`, formData);
         const updatedProjects = [...projects];
         updatedProjects[editingIndex] = updatedProject.data;
         setProjects(updatedProjects);
       } else {
-        const newProject = await axios.post('http://localhost:8000/api/timeoff', formData);
+        const newProject = await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/timeoff', formData);
         setProjects([...projects, newProject.data]);
       }
       setPopupOpen(false);

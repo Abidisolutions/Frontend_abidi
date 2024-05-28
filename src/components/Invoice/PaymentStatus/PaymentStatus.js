@@ -27,7 +27,7 @@ const PaymentStatus = () => {
 
   const fetchInvoices = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/view-invoices');
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/view-invoices');
       setinvoices(response.data);
       console.log(response.data);
     } catch (error) {
@@ -63,7 +63,7 @@ const PaymentStatus = () => {
       invoiceNumber: selectedInvoice,
     };
   try{
-    const response = await axios.post('http://localhost:8000/api/pay-invoices',formData);
+    const response = await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/pay-invoices',formData);
     toast.success('Payment Status updated successfully');
     setPaid(paid? false : true);
     setPopupOpen(false);

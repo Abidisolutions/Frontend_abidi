@@ -24,7 +24,7 @@ const MyTasks = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/my-tasks',{params:{
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/my-tasks',{params:{
         name: localStorage.getItem("name"),
       }});
       console.log(response.data);
@@ -72,10 +72,10 @@ const MyTasks = () => {
 
     try {
       if (editingProject) {
-        await axios.put(`http://localhost:8000/api/assigned-tasks/update`, formData);
+        await axios.put(`https://123abcd-abidi_pro.mdbgo.io/api/assigned-tasks/update`, formData);
         toast.success("Task updated successfully");
       } else {
-        await axios.post('http://localhost:8000/api/assigned-tasks', formData);
+        await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/assigned-tasks', formData);
         toast.success("Task created successfully");
       }
       fetchTasks();
@@ -89,7 +89,7 @@ const MyTasks = () => {
 
   const handleDropdownChange = async (event,_id) => {
     try{
-     let res= await axios.put("http://localhost:8000/api/updateStatus",{
+     let res= await axios.put("https://123abcd-abidi_pro.mdbgo.io/api/updateStatus",{
       id:_id,
       taskStatus:event.target.value
     });

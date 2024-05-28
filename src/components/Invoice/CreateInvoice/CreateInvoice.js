@@ -21,7 +21,7 @@ const CreateInvoice = () => {
 
   const fetchInvoices = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/api/create-invoices');
+      const response = await axios.get('https://123abcd-abidi_pro.mdbgo.io/api/create-invoices');
       setProjects(response.data);
     } catch (error) {
       console.error('Error fetching invoices:', error);
@@ -75,7 +75,7 @@ const CreateInvoice = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:8000/api/invoices', formData); 
+      const response = await axios.post('https://123abcd-abidi_pro.mdbgo.io/api/invoices', formData); 
       console.log('Form submitted successfully:', response.data);
       toast.success("Invoice Created successfully");
 
