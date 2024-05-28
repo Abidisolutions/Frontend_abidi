@@ -1,0 +1,61 @@
+.statuscards{
+    display: flex;
+    width: 100%;
+    margin: 10vh 0;
+    gap: 2%;
+}
+.card {
+    width: 80%;
+    height: 80vh;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: white;
+    font-family:"arial";
+    box-shadow: 6px 6px 0px rgba(255, 220, 0, 0.6);
+
+}
+ 
+.content {
+    padding: 1.5rem;
+}
+ 
+.date {
+    font-size: 0.875rem; /* 14px */
+    color: #718096;
+    margin-bottom: 0.5rem;
+}
+ 
+.title {
+    font-size: 1.5rem; /* 20px */
+    font-weight: bolder;
+    margin-bottom: 0.75rem;
+    font-family: "Serif";
+}
+ 
+.task-list {
+    list-style-type: decimal;
+    font-size: 0.875rem; /* 14px */
+    color: #4a5568;
+    margin-bottom: 1rem;
+    max-height: 6rem; /* Adjust as needed */
+    overflow-y: auto; /* Add scroll if necessary */
+}
+ 
+.task-list li {
+    margin-bottom: 0.5rem;
+}
+ 
+.button {
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-size: 15px;
+}
+ 
+.button:hover {
+    background-color: #fbbf11;
+}

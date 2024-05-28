@@ -1,0 +1,213 @@
+.profile-page{
+  padding: 10px;
+  flex: 1;
+  display: flex;
+}
+.profile-left{
+  width: 70%;
+  padding: 50px 2%;
+}
+.profile-right{
+  width: 30%;
+  background-color: #cbcccc30;
+}
+.formbox{
+  padding: 0 6%;
+  margin-bottom: 6%;
+}
+
+.formitem1{
+  width: 100%;
+}
+.formitem1 label{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.formitem1 input{
+  margin-top: 16px;
+  width: 89%;
+  height: 33px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+
+}
+.formitems{
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
+}
+.formitems label{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.formitems input{
+  margin-top: 16px;
+  width: 89%;
+  height: 33px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+
+}
+.formitem2{
+  width: 47%;
+}
+.formitem2 label{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.formitem2 input{
+  margin-top: 16px;
+  width: 89%;
+  height: 33px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+
+}
+.formitem2 select{
+  margin-top: 16px;
+  width: 100%;
+  height: 33px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+
+}
+.formitem3{
+  width: 30%;
+}
+.formitem3 label{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.formitem3 input{
+  margin-top: 16px;
+  width: 89%;
+  height: 33px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+
+}
+.formitem3 select{
+  margin-top: 16px;
+  width: 100%;
+  height: 36px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+
+}
+#uemail{
+  margin-top: 16px;
+  width: 89%;
+  height: 33px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+}
+#formbutt{
+  width: 100%;
+  align-self: end;
+}
+#formbutt button{
+  margin-top: 3vh;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-desc{
+  width: 100%;
+ }
+.form-desc label{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.form-desc textarea{
+  margin-top: 16px;
+  width: 98%;
+  height: 80px;
+  background-color: #a4a5a500;
+  color: black;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border: 1px solid #a4a5a5a3;
+  border-radius: 5px;
+
+}
+.file-upload-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.file-upload-btn {
+  background-color: rgb(151, 141, 3) ;
+  color: #ffffff;
+  padding: 1.5% 7%;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.file-upload-btn:hover {
+  background-color: rgb(151, 141, 3) 
+}
+
+.file-name {
+  margin-left: 10px;
+  display: inline-block;
+}
+.profileimg{
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+.profileimg img{
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.preview{
+  margin: 0 20px;
+}
+.profileimg h2{
+text-align: center; 
+font-size: 34px; 
+margin: 0;
+padding-top: 10px;}

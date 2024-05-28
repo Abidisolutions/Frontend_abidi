@@ -1,0 +1,23 @@
+.badge-button {
+    padding: 0.5rem 1rem; 
+    background-color: transparent; 
+    color: #000000; 
+    font-weight: 600; 
+    border: 1px solid #000000; 
+    border-radius: 0.25rem; 
+    transition: background-color 0.2s ease-in, color 0.2s ease-in, border-color 0.2s ease;
+    width: 7%;
+    text-align: center;
+    text-decoration: none; 
+  }
+
+  .badge-button:hover {
+    background-color: #000000; 
+    color: #fff; 
+    border-color: transparent; 
+    transform: translateY(-0.25rem);
+  }
+
+  .badge-button:active {
+    transform: translateY(0); 
+  }

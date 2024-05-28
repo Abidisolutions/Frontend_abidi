@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4b060b37.css",
+    "main.js": "/static/js/main.1622ce95.js",
+    "static/js/703.c493e622.chunk.js": "/static/js/703.c493e622.chunk.js",
+    "static/js/198.3b07671d.chunk.js": "/static/js/198.3b07671d.chunk.js",
+    "static/js/787.03c04cff.chunk.js": "/static/js/787.03c04cff.chunk.js",
+    "static/media/human-resources-concept-with-man.jpg": "/static/media/human-resources-concept-with-man.9d488f64a17c5b89e1a3.jpg",
+    "static/media/01__1_-removebg-preview (1).png": "/static/media/01__1_-removebg-preview (1).ce17ca759d0558933249.png",
+    "static/media/Login-Logo-01.png": "/static/media/Login-Logo-01.83d24df8e60866361e24.png",
+    "static/media/Earnings.png": "/static/media/Earnings.095ba06fdef58bc522cb.png",
+    "static/media/earth-hour.png": "/static/media/earth-hour.4c687b86a2af02efbd4e.png",
+    "static/media/payment-Status.png": "/static/media/payment-Status.8f6622a33a48c698cc62.png",
+    "static/media/View Invoice.png": "/static/media/View Invoice.ecf738e2c87346d08414.png",
+    "static/media/project.png": "/static/media/project.1b941aff27b6966e6e04.png",
+    "static/media/management.png": "/static/media/management.898c2fa0f3c8a0abec4a.png",
+    "static/media/report.png": "/static/media/report.a6ad0ee56d2c395968ff.png",
+    "static/media/assignment.png": "/static/media/assignment.419c478fb226694158ef.png",
+    "static/media/wall-clock.png": "/static/media/wall-clock.ea629724e6525cac0186.png",
+    "static/media/personal-data.png": "/static/media/personal-data.393b66f88ece964bcf97.png",
+    "static/media/user.png": "/static/media/user.c920752422c11377083e.png",
+    "static/media/salary.png": "/static/media/salary.9a40feb822c8baf25d21.png",
+    "static/media/clipboard.png": "/static/media/clipboard.24bc22e8e70a58ec11e0.png",
+    "static/media/punch-clock.png": "/static/media/punch-clock.8564fcc81b29018bc2a8.png",
+    "static/media/invoice.png": "/static/media/invoice.14cf5197bc41a6303bc5.png",
+    "static/media/Hamburger_icon.svg.png": "/static/media/Hamburger_icon.svg.a633845bca57a0d1a648.png",
+    "index.html": "/index.html",
+    "main.4b060b37.css.map": "/static/css/main.4b060b37.css.map",
+    "main.1622ce95.js.map": "/static/js/main.1622ce95.js.map",
+    "703.c493e622.chunk.js.map": "/static/js/703.c493e622.chunk.js.map",
+    "198.3b07671d.chunk.js.map": "/static/js/198.3b07671d.chunk.js.map",
+    "787.03c04cff.chunk.js.map": "/static/js/787.03c04cff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b060b37.css",
+    "static/js/main.1622ce95.js"
+  ]
+}

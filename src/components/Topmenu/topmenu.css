@@ -1,0 +1,54 @@
+.top-menu-bar {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff; /* Set your desired background color */
+    padding: 10px;
+    color: rgb(1, 1, 1); /* Set the text color */
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+    background-color: white;
+    width: 20%;
+  }
+  
+  .search-bar {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .icons {
+    display: flex;
+    width: 20%;
+    background-color: white;
+ 
+  }
+  .statistic-icon,
+  .settings-icon,
+  .product-icon {
+    background-color: white;
+    color: #868686;
+    cursor: pointer;
+    padding: 10px 15px;
+    /* Style your icons further as needed */
+  }
+  .profile{
+    text-align: end;
+    width: 55%;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+  }
+  .profile img{
+    width: 40px;
+  }

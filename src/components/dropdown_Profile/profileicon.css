@@ -1,0 +1,12 @@
+.dropdown button{
+    padding: 0;
+    border: none;
+}
+.dropdown img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.MuiMenuButton-root MuiMenuButton-variantOutlined MuiMenuButton-colorNeutral MuiMenuButton-sizeMd css-1n4fwaf-JoyMenuButton-root{
+    background-color: aqua;
+}

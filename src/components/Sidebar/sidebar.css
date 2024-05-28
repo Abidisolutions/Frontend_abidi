@@ -1,0 +1,94 @@
+.side-bar {
+  padding: 60px 10px 10px 10px;
+  width: 19%;
+  color: black; /* Set the text color */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbf8f8;
+  position: relative; /* Added to position the toggle button absolutely within the sidebar */
+  transition: width 0.3s; /* Smooth transition for sidebar toggle */
+}
+@media (max-width: 768px) {
+  .side-bar.open {
+    width: 100%; /* Full screen width when sidebar is open on mobile */
+  
+  }}
+/* Styles for the toggle button */
+.sidebar-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 24px; /* Adjust as needed */
+  right: 20px; /* Place it outside the sidebar */
+  z-index: 10; /* Make sure it's above other elements */
+  background-color: #fbf8f8;
+
+}
+
+.sidebar-toggle img {
+  width: 30px;
+  background-color: #fbf8f8;
+
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  background-color: #fbf8f8;
+}
+
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  background-color: #fbf8f8;
+
+}
+
+nav a img {
+  width: 15px; /* Default icon size */
+  margin-right: 10px;
+  transition: width 0.3s; /* Smooth transition for icon size */
+}
+
+
+
+.side_barheading {
+  background-color: #fbf8f8;
+}
+
+.side_mainheading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 0;
+  padding-left: 0;
+  background-color: #fbf8f8;
+  margin-top: -30px;
+
+}
+
+/* Closed state styles */
+.side-bar.closed {
+  width: 75px; /* Adjust the width to fit the larger icons */
+  text-align: center;
+  margin: 0;
+}
+
+/* Larger icons in the closed state */
+.side-bar.closed nav a img {
+  width: 30px; /* Larger icon size when sidebar is closed */
+}
+
+/* Hide the text in the closed state */
+.side-bar.closed nav a {
+  font-size: 0; /* Hide text labels */
+  justify-content: center; /* Center the icon */
+}
+
