@@ -101,7 +101,7 @@ const HomePage = ({ children }) => {
               </div>
               <div className='grid-items'>
               <div className='grid-content'>
-                <img src={`https://abidipro-hr.vercel.app/${UserStatus}.png`} style={{maxHeight:"20vh"}}></img>
+                <img src={`https://abidipro-hr.vercel.app/${UserStatus.toLowerCase()}.png`} style={{maxHeight:"20vh"}}></img>
                <p style={{fontWeight:'bold'}}>{UserStatus}</p> 
               </div>
               </div>
