@@ -105,7 +105,15 @@ import axios from 'axios';
         </>
          : null
       }
-        
+        {
+          isAdmin?
+          <>
+          <h3 className='side_barheading'>Documents</h3>
+          <Link to = "/docUpload"><img src={"https://img.icons8.com/?size=100&id=86868&format=png&color=000000"} alt='' />Upload Documents</Link>
+          <Link to = "/docView"><img src={"https://img.icons8.com/?size=100&id=111878&format=png&color=000000"} alt='' />View Documents</Link>
+          </>          
+          :null
+        }
         {
           isAdmin?
           <>

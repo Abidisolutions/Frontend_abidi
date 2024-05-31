@@ -4,7 +4,6 @@ import SideBar from '../Sidebar/SideBar';
 import axios from 'axios';
 import '../Home/home.css';
 import { Link } from 'react-router-dom';
-
 import { Preview, print } from 'react-html2pdf';
 import HourBar from '../statistics/hour';
 import Barchart from '../statistics/barchart';

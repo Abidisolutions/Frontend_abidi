@@ -1,0 +1,41 @@
+.custom-file-upload {
+    border: 1px solid #ffbc05;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    transition: border-width 0.05s ease-in;
+}
+
+.custom-submit-upload {
+    border: 1px solid #ffbc05 !important;
+    display: inline-block !important;
+    padding: 6px 12px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in !important;
+    transition: border-width 0.05s ease-in;
+    background-color: #ffbc05 !important;
+    color:"#292826" !important;
+    font-weight: bold !important;
+    color: rgba(0, 0, 0, 0.747) !important;
+    max-width: 25%;
+    height: 5%;
+    margin-top: 2px;
+}
+
+#docForm{
+    font-family: "Poppins";
+    max-height: 60% !important;
+    max-width: 90% !important;
+}
+
+.custom-file-upload:hover{
+    border-width: 3px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+

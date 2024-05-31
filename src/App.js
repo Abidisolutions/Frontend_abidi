@@ -28,6 +28,8 @@ import AllUsers from './components/AllUsers/allusers.jsx'
 import ProjectStats from './components/Projects/ProjectStats/ProjectStats.jsx'
 import TimeoffApp from './components/TimeAndAttendance/TimeoffApproval/TimeoffApp.js';
 import ViewOne from './components/Invoice/ViewOneInvoice/ViewInvoice.js';
+import Doc from './components/Documents/doc.jsx';
+import DocView from './components/Documents/docView/docView.jsx';
 
 // import Page2 from './components/Page2';
 // Import other page components as needed
@@ -65,6 +67,8 @@ const App = () => {
       <Route path="/projectstats" element = {<ProjectStats/>}/>
       <Route path="/timeoff-app" element = {<TimeoffApp/>}/>
       <Route path="/ViewInvoice/:id" element = {<ViewOne/>}/>
+      <Route path="/docUpload" element = {<Doc/>}/>
+      <Route path="/docView" element = {<DocView/>}/>
 
       {/* <Route path="/page1" element={<Page1 />} />
       <Route path="/page2" element={<Page2 />} />
