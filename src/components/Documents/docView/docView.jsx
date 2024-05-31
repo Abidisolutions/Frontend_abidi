@@ -30,8 +30,8 @@ const HomePage = ({ children }) => {
       <TopMenuBar />
       <div className="content-container">
         <SideBar />
-        <div className="main-content">
-        <h1>Documents</h1>
+        <div className="main-content" style={{fontFamily:"Poppins"}}>
+        <h1>View Documents</h1>
         <table>
         <thead>
           <tr>
